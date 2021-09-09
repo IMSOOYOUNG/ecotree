@@ -1,0 +1,248 @@
+@import "reset.css";
+
+header{
+    position:relative;
+    top:0px; left:0;
+    width:100%; height:50px;
+    border:0px solid black;
+    margin-top:30px;
+}
+
+.logo{
+    position:absolute;
+    top:0; left:12%;
+    z-index: 10;
+    width:190px; height:50px;
+    border:0px solid black;
+    background: url(../img/header/logo.png) no-repeat center center;
+    background-size:contain;
+    /* cursor:pointer; */
+    transition: all 0.3s;
+}
+.logo> a{
+    display:block;
+    width:100%; height:100%;
+}
+
+.menu{
+    position:absolute;
+    top:0%; right:13%;
+    z-index: 30;
+    height:50px;
+    border:0px solid black;
+    transition: all 0.3s;
+}
+
+.menu> li{
+    height:100%;
+    border:0px solid black;
+    text-align: center;
+    float:left;
+}
+.menu> li:hover ul{
+    opacity:1;
+}
+
+.menu> li> a{
+    line-height: 50px;
+    text-align: center;
+    font-size:19px;
+    cursor:pointer;
+    font-weight:bold;
+    padding:0px 30px;
+}
+
+.menu> li> ul{
+    border:1px solid #ccc;
+    border-radius: 25px;
+    opacity:0;
+    transition: all 0.3s;
+    padding:0px 10px;
+    background:white;
+}
+
+.menu> li> ul> li{
+    text-align: center;
+    line-height: 3;
+    font-size:16px;
+}
+
+.menu> li> ul> li> a{
+    cursor:pointer;
+}
+.menu> li> ul> li> a:hover{
+    color:#0becdd;
+}
+
+.menubar{
+    display:none;
+}
+.mobmenu{
+    display:none;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .menubar{
+        display:none;
+    }
+    .mobmenu{
+        display:none;
+    }
+
+    header{
+        margin-top:10px;
+    }
+
+    .logo{
+        position:absolute;
+        top:0; left:0;
+        width:160px;
+    }
+    .menu{
+        position:absolute;
+        top:0; right:0;
+    }
+
+    .menu> li> a{
+        font-size:15px;
+        padding:0px 20px;
+    }
+    .menu> li> ul> li{
+        font-size:14px;
+    }
+
+
+}
+
+
+@media screen and (max-width:767px) {
+    .menu{
+        display:none;
+    }
+
+    header{
+        position:relative;
+        top:0;left:0;
+        margin-top:0px;
+    }
+    .logo{
+        position:absolute;
+        top:0; left:0;
+        width:160px;
+    }
+    .menubar{
+        display:block;
+        position:absolute;
+        top:10px; right:10px;
+        z-index: 99;
+        width:35px; height:29px;
+        border:0px solid black;
+    }
+
+    .bar1,.bar2, .bar3{
+        width:100%; height:5px;
+        background:#ccc;
+        margin-bottom:7px;
+        transition: all 0.3s;
+    }
+
+    .change .bar1{
+        width:35px; transform: rotate(45deg) translate(5px, 12px);
+    }
+    .change .bar2{
+        opacity: 0;
+    }
+    .change .bar3{
+        width:35px; transform: rotate(-45deg) translate(5px, -12px);
+    }
+
+
+    .mwrap{
+        width:100%; height:100vh;
+        position:absolute;
+        top:0;left:0;
+        overflow: hidden;
+    }
+    .mobmenu{
+        position:fixed;
+        top:0; right:-100%;
+        z-index: 98;
+        width:100%; height:100vh;    
+        background-image: linear-gradient(-29deg, #007fd6, #3ad9a3);
+        display:block;
+        overflow: hidden;
+    }
+    .m_logo{
+        position:absolute;
+        top:10px; left:10px;
+        width:120px; height:30px;
+        border:0px solid black;
+        background: url(../img/header/m_logo_white.png) no-repeat center center;
+        background-size:contain;
+        cursor:pointer;
+    }
+
+
+    .m_box{
+        position:absolute;
+        top:15%; left:50%;
+        transform:translate(-50%,0);
+        border:px solid black;
+        width:200px; height:400px;
+    }
+
+    .m_box> li{
+        position: relative;
+        width:100%; 
+        border:px solid black;
+        text-align: center;
+    }
+    .m_box> li> a{
+        line-height: 60px;
+        text-align: center;
+        font-size:23px;
+        cursor:pointer;
+        color:white;
+        cursor:pointer;
+    }
+
+    .m_box> li> .plus{
+        position: absolute; 
+        top:22.5px; left:150px;  
+        width:15px; height:15px;
+        outline:px solid black;
+    }
+    .m_box> li> .plus> .plus1{
+        position:absolute;
+        top:0; left:0;
+        width:100%; height:2px;
+        background:white;
+        margin-top:9px;
+        transition: 0.3s;
+    }
+    .m_box> li> .plus> .plus2{
+        position:absolute;
+        top:0; left:0px;
+        width:100%; height:2px;
+        background:white;
+        margin-top:9px;
+        transform: rotate(90deg);
+        transition: 0.3s;
+    }
+
+    .m_box> li> ul{
+        width:100%;
+        display:none;
+        padding-bottom: 10px;
+    }
+    .m_box> li> ul> li{
+        width:100%;
+        text-align: center;
+        line-height: 2;
+    }
+    .m_box> li> ul> li> a{
+       color:white;
+    }
+
+}

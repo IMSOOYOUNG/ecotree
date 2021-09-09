@@ -1,0 +1,803 @@
+@import "reset.css";
+
+section{
+    position:relative;
+    top:0; left:0;
+    width:100%;
+    overflow:hidden;
+}
+
+article{
+    position:relative;
+    top:0; left:0;
+}
+
+
+
+.at1{
+    width:100%; height:1200px;
+    border:0px solid blue;
+}
+
+.at1_pic{
+    position: absolute;
+    top:0; right:0;
+    z-index: -1;
+    width:600px; height:500px;
+    border:0px solid black;
+    background: url(../img/ecotree/bg_tbl_hocl.png)no-repeat;
+    background-size:contain;
+    animation: at1_pic 5s infinite;
+}
+@keyframes at1_pic{
+    0%{top:0px;}
+    50%{top:50px;}
+    100%{top:0px;}
+}
+
+.at1_header{
+    width:100%; height:200px;
+    border:0px solid black;
+    text-align: center;
+    line-height: 200px;
+    font-size:30px;
+    font-weight: bold;
+}
+
+.at1_q{
+    position: relative;
+    width:600px; height:120px;
+    border:0px solid black;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 120px;
+    font-size:50px;
+    font-weight: bold;
+    cursor:pointer;
+    animation: at1_q 3s infinite;
+    animation-delay: 4s;
+}
+@keyframes at1_q{
+    0%{top:0px;}
+    50%{top:-20px;}
+    100%{top:0px;}
+}
+
+
+.at1_q> .line1{
+    position:absolute;
+    top:0;left:0;
+    height:3px;
+    background: green;
+    animation: line1 1s;
+    animation-fill-mode: forwards;
+}
+.at1_q> .line2{
+    position:absolute;
+    top:0;right:0;
+    width:3px;
+    background: green;
+    animation: line2 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.at1_q> .line3{
+    position:absolute;
+    bottom:0;right:0;
+    height:3px;
+    background: green;
+    animation: line3 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.at1_q> .line4{
+    position:absolute;
+    bottom:0;left:0;
+    width:3px;
+    background: green;
+    animation: line4 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line1{
+    0%{width:0%;}
+    100%{width:100%;}
+}
+@keyframes line2{
+    0%{height:0%;}
+    100%{height:100%;}
+}
+@keyframes line3{
+    0%{width:0%;}
+    100%{width:100%;}
+}
+@keyframes line4{
+    0%{height:0%;}
+    100%{height:100%;}
+}
+
+
+.at1_a{
+    width:100%; height:100px;
+    border:0px solid black;
+    text-align: center;
+    line-height: 100px;
+    font-size:20px;
+    display: none;
+}
+
+
+.at1_text{
+    width:100%; height:150px;
+    border:0px solid black;
+    text-align: center;
+    line-height: 150px;
+    font-size:23px;
+    font-weight:bold;
+    display: none;
+}
+
+.at1_table{
+    width:1024px; height:500px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    display: none;
+}
+
+.at1_table> thead> tr> th{
+    height:125px;
+    border:1px solid black;
+}
+.at1_table> thead> tr> th:nth-child(1){
+    border-left:none;
+}
+.at1_table> thead> tr> th:nth-child(3){
+    border-right: none;
+}
+
+
+.at1_table> tbody> tr> td{
+    text-align: center;
+    border:1px solid black;
+    font-size: 17px;
+} 
+.at1_table> tbody> tr> td:nth-child(1){
+    border-left:none;
+    width:20%;
+}
+.at1_table> tbody> tr> td:nth-child(3){
+    border-right: none;
+    width:20%;
+}
+
+
+
+
+.at2{
+    width:100%; height:800px;
+    border:0px solid blue;
+}
+
+.at2_header{
+    width:100%; height:200px;
+    border:0px solid black;
+    text-align: center;
+    line-height: 200px;
+    font-size:30px;
+    font-weight: bold;
+}
+
+.at2_box{
+    width:1000px; height:320px;
+    border:0px solid black;
+    margin:0 auto;
+}
+
+.at2_box> li{
+    position: relative;
+    width:320px; height:320px;
+    border:0px solid black;
+    border-radius:65% 35% 60% 40%;
+    background: #56bcb4;
+    float:left;
+    margin-left: 10px;
+    animation: at2_box 10s  linear infinite;
+}
+.at2_box> li::after{
+    position: absolute;
+    z-index: -1;
+    content: '';
+    width:100%; height: 100%;
+    background: #d8edeb;
+    border-radius: 65% 35% 60% 40%;
+    animation: at2_box 15s linear infinite;
+}
+@keyframes at2_box {
+    0% { border-radius: 65% 35% 60% 40%; }
+    25% {border-radius: 35% 65% 40% 60%; }
+    50% { border-radius: 60% 40% 65% 35%;  }
+    75% {  border-radius: 40% 60% 35% 65%;  }
+}
+
+.at2_box> li> p{
+    position: absolute;
+    top:50%; left:0;
+    transform:translateY(-50%);
+    width:100%;
+    border:0px solid black;
+    text-align: center;
+    color:white;
+    font-size:20px;
+    font-weight: bold;
+}
+.at2_box> li> p> span{
+    font-weight: normal
+}
+
+
+.at2_text{
+    width:100%; height:200px;
+    border:0px solid black;
+}
+.at2_text> p{
+    width:100%; height:50px;
+    border:0px solid black;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size:20px;
+}
+
+
+.at3{
+    width:100%; height:1100px;
+    border:0px solid black
+}
+
+.at3_header{
+    width:100%; height:150px;
+    border:0px solid black;
+    text-align: center;
+    line-height: 150px;
+    font-size:60px;
+    font-weight:bold;
+}
+.at3_text1{
+    width:100%; height:80px;
+    border:0px solid black;
+    text-align: center;
+    line-height: 80px;
+    font-size:25px;
+    font-weight:bold;
+}
+.at3_text2{
+    width:100%; height:50px;
+    border:0px solid black;
+    text-align: center;
+    line-height: 50px;
+    font-size:18px;
+}
+
+.at3_pic{
+    position:relative;
+    top:50px;
+    width:1000px; height: 600px;
+    margin: 0 auto;
+    border:0px solid black;
+}
+.at3_pic> div{
+    width:100%; height:100%;
+    background: url(../img/ecotree/img_principle.png) no-repeat center center;
+    background-size: contain;
+    display: none;
+}
+
+
+.at4{
+    width:100%; height:600px;
+    border:0px solid blue;
+}
+
+.at4> h2{
+    width:100%; height: 150px;
+    border:0px solid black;
+    text-align: center;
+    line-height: 150px;
+    font-size:30px;
+}
+
+.at4> ul{
+    width:1024px; height:300px;
+    border:0px solid black;
+    margin:0 auto;
+}
+.at4> ul> li{
+    float:left;
+    width: 24%; height:100%;
+    border:10px solid rgba(204, 204, 204, 0.3);
+    margin-right:1.33%;
+    display:none;
+}
+.at4> ul> li:nth-child(4){
+    margin-right:0%;
+}
+
+
+.at4> ul> li> div:nth-child(1){
+    width:100%; height:180px;
+    border:0px solid black;
+}
+
+.at4> ul> li> div:nth-child(2){
+    width:100%;
+}
+.at4> ul> li> div:nth-child(2)> h2{
+    width:100%; height:40px;
+    text-align: center;
+    line-height: 40px;
+}
+.at4> ul> li> div:nth-child(2)> p{
+    width:100%; height:30px;
+    text-align: center;
+    line-height: 30px;
+}
+.at4> ul> li> div:nth-child(2)> span{
+    width:100%; height:30px;
+    text-align: center;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 30px;
+}
+
+
+
+.at5{
+    width:100%; height:850px;
+    border:0px solid black;
+}
+
+.at5> h2{
+    width:100%; height:150px; 
+    border:0px solid black;
+    text-align: center;
+    line-height: 150px;
+    font-size:30px;
+}
+.at5> ul{
+    width:1024px; height:600px;
+    border:0px solid black;
+    margin:0 auto;
+}
+.at5> ul> li{
+    position: relative;
+    width:100%; height:100%;
+    background:url(../img/ecotree/global.png)no-repeat center center;
+    background-size:contain;
+}
+.at5> ul> li> div{
+    position: absolute;
+    width:30px; height:30px;
+    border-radius: 100%;
+    background:rgba(135, 207, 235, 0.8);
+}
+.at5> ul> li> div:nth-child(1){
+    position: absolute;
+    top: 280px; left:45px;
+    animation: at4_div 2s infinite;
+}
+.at5> ul> li> div:nth-child(2){
+    position: absolute;
+    top: 240px; left:75px;
+    animation: at4_div 2s infinite;
+}
+.at5> ul> li> div:nth-child(3){
+    position: absolute;
+    top: 255px; left:118px;
+    animation: at4_div 2s infinite;
+}
+.at5> ul> li> div:nth-child(4){
+    position: absolute;
+    top: 276px; left:146px;
+    animation: at4_div 2s infinite;
+}
+.at5> ul> li> div:nth-child(5){
+    position: absolute;
+    top: 455px; left:126px;
+    animation: at4_div 2s infinite;
+}
+.at5> ul> li> div:nth-child(6){
+    position: absolute;
+    top: 345px; left:258px;
+    animation: at4_div 2s infinite;
+}
+.at5> ul> li> div:nth-child(7){
+    position: absolute;
+    top: 345px; left:323px;
+    animation: at4_div 2s infinite;
+}
+.at5> ul> li> div:nth-child(8){
+    position: absolute;
+    top: 455px; left:405px;
+    animation: at4_div 2s infinite;
+}
+.at5> ul> li> div:nth-child(9){
+    position: absolute;
+    top: 283px; left:435px;
+    animation: at4_div 2s infinite;
+}
+.at5> ul> li> div:nth-child(10){
+    position: absolute;
+    top: 158px; left:742px;
+    animation: at4_div 2s infinite;
+}
+.at5> ul> li> div:nth-child(11){
+    position: absolute;
+    top: 245px; left:753px;
+    animation: at4_div 2s infinite;
+}
+.at5> ul> li> div:nth-child(12){
+    position: absolute;
+    top: 413px; left:876px;
+    animation: at4_div 2s infinite;
+}
+
+
+@keyframes at4_div{
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+
+
+
+/* 태블릿 사이즈 */
+@media screen and (min-width:768px) and (max-width:1024px) {
+ 
+    
+    .at1{
+        height:900px;
+    }
+    
+    .at1_pic{
+        width:300px; height:300px;
+    }
+    
+    .at1_header{
+        height:130px;
+        line-height: 130px;
+        font-size:25px;
+    }
+    
+    .at1_q{
+        width:400px; height:80px;
+        line-height: 80px;
+        font-size:30px;
+    }
+    
+    .at1_a{
+        height:50px;
+        line-height: 50px;
+        font-size:15px;
+    }
+    
+    
+    .at1_text{
+        height:80px;
+        line-height:80px;
+        font-size:18px;
+    }
+    
+    .at1_table{
+        width:90%; height:500px;
+    }
+    
+    .at1_table> thead> tr> th{
+        height:80px;
+    }
+    
+    
+    .at1_table> tbody> tr> td{
+        font-size: 15px;
+    } 
+    
+    
+    
+    
+    .at2{
+        height:600px;
+    }
+    
+    .at2_header{
+        height:150px;
+        line-height: 150px;
+        font-size:25px;
+    }
+    
+    .at2_box{
+        width:768px; height:280px;
+        border:0px solid black;
+        margin:0 auto;
+    }
+    
+    .at2_box> li{
+        width:250px; height:250px;
+        margin-left: 4.5px;
+    }
+    
+    .at2_box> li> p{
+        font-size:15px;
+    }
+    
+    
+    .at2_text{
+        height:120px;
+    }
+    .at2_text> p{
+        font-size:18px;
+    }
+    
+    
+    .at3{
+        height:800px;
+    }
+    
+    .at3_header{
+        height:130px;
+        line-height: 130px;
+        font-size:25px;
+    }
+    .at3_text1{
+        height:50px;
+        line-height: 50px;
+        font-size:20px;
+    }
+    .at3_text2{
+        height:50px;
+        font-size:15px;
+    }
+    
+    .at3_pic{
+        width:768px; height: 400px;
+    }
+    
+    .at4{
+        width:100%; height:500px;
+    }
+    
+    .at4> h2{
+        height: 130px;
+        line-height: 130px;
+        font-size:25px;
+    }
+    
+    .at4> ul{
+        width:768px; height:300px;
+    }
+    
+    
+    
+    .at4> ul> li> div:nth-child(2)> h2{
+        font-size:18px;
+    }
+    .at4> ul> li> div:nth-child(2)> p{
+        font-size:12px;
+    }
+    .at4> ul> li> div:nth-child(2)> span{
+        font-size:15px;
+    }
+    
+    
+    
+    .at5{
+        height:750px;
+    }
+    
+    .at5> h2{
+        height:130px; 
+        line-height: 130px;
+        font-size:25px;
+    }
+    .at5> ul{
+        width:768px; height:500px;
+    }
+
+    .at5> ul> li> div{
+        width:20px; height:20px;
+    }
+
+    .at5> ul> li> div:nth-child(1){
+        top: 235px; left:38px;
+    }
+    .at5> ul> li> div:nth-child(2){
+        top: 208px; left:60px;
+    }
+    .at5> ul> li> div:nth-child(3){
+        top: 220px; left:90px;
+    }
+    .at5> ul> li> div:nth-child(4){
+        top: 235px; left:110px;
+    }
+    .at5> ul> li> div:nth-child(5){
+        top: 370px; left:95px;
+    }
+    .at5> ul> li> div:nth-child(6){
+        top: 290px; left:195px;
+    }
+    .at5> ul> li> div:nth-child(7){
+        top: 290px; left:245px;
+    }
+    .at5> ul> li> div:nth-child(8){
+        top: 370px; left:305px;
+    }
+    .at5> ul> li> div:nth-child(9){
+        top: 240px; left:325px;
+    }
+    .at5> ul> li> div:nth-child(10){
+        top: 148px; left:555px;
+    }
+    .at5> ul> li> div:nth-child(11){
+        top: 205px; left:565px;
+    }
+    .at5> ul> li> div:nth-child(12){
+        top: 335px; left:660px;
+    }
+    
+}
+
+
+/* 모바일 사이즈 */
+@media screen and (max-width:767px) {
+  
+    .at1{
+        height:750px;
+    }
+    
+    .at1_pic{
+        width:200px; height:200px;
+    }
+    
+    .at1_header{
+        height:100px;
+        line-height: 100px;
+        font-size:20px;
+    }
+    
+    .at1_q{
+        width:300px; height:60px;
+        line-height: 60px;
+        font-size:20px;
+    }
+    
+    .at1_a{
+        margin-top:20px;
+        height:60px;
+        line-height: 2;
+        font-size:15px;
+    }
+      
+    .at1_text{
+        margin-top:20px;
+        height:70px;
+        line-height: 2;
+        font-size:15px;
+    }
+    
+    .at1_table{
+        width:90%; height:300px;
+    }
+    
+    .at1_table> thead> tr> th{
+        height:50px;
+    }
+    
+    .at1_table> tbody> tr> td{
+        font-size: 13px;
+    } 
+    
+    
+    
+    
+    .at2{
+        height:1050px;
+    }
+    
+    .at2_header{
+        height:100px;
+        line-height: 100px;
+        font-size:20px;
+    }
+    
+    .at2_box{
+        width:375px; height:800px;
+    }
+    
+    .at2_box> li{
+        width:255px; height:255px;
+        float:none;
+        margin-left: 60px;
+    }
+    .at2_box> li> p{
+        font-size:15px;
+    }
+    
+    
+    .at2_text{
+        height:100px;
+    }
+    .at2_text> p{
+        height:40px;
+        line-height: 40px;
+        font-size:15px;
+    }
+
+
+    
+    
+    .at3{
+        height:650px;
+    }
+    
+    .at3_header{
+        height:100px;
+        line-height: 100px;
+        font-size:20px;
+    }
+    .at3_text1{
+        height:60px;
+        line-height: 60px;
+        font-size:16px;
+    }
+    .at3_text2{
+        height:40px;
+        line-height: 40px;
+        font-size:13px;
+    }
+    
+    .at3_pic{
+        top:30px;
+        width:375px; height: 300px;
+    }
+    
+    
+    .at4{
+        height:1400px;
+    }
+    
+    .at4> h2{
+        height: 100px;
+        line-height: 100px;
+        font-size:20px;
+    }
+    
+    .at4> ul{
+        width:375px; height:1200px;
+    }
+    .at4> ul> li{
+        float:none;
+        width: 60%; height:270px;
+        margin-right:none;
+        margin-left:20%;
+        margin-top:20px;
+    }
+    
+    .at4> ul> li> div:nth-child(1){
+        height:150px;
+    }
+    
+    .at4> ul> li> div:nth-child(2)> h2{
+        font-size:18px;
+    }
+    .at4> ul> li> div:nth-child(2)> p{
+        font-size:15px;
+    }
+    
+    
+    .at5{
+        display:none;
+    }
+    
+
+}
+

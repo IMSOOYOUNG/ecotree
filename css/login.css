@@ -1,0 +1,281 @@
+@import "reset.css";
+
+
+
+section{
+    position:relative;
+    top:0; left:0;
+}
+
+
+.at{
+    width:100%; height:800px;
+    background: linear-gradient( 65deg, #0097c1, #00dabd);
+}
+
+
+.header{
+    position: relative;
+    width:100%;height:150px;
+    border:0px solid black;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 190px;
+    font-size:30px;
+    font-weight:bold;
+}
+
+
+
+.tool{
+    position: relative;
+    width:100%; height:500px;
+    border:0px solid blue;
+}
+
+
+
+.tool> .box{
+    width:450px; height:360px;
+    border:0px solid black;
+    margin: 0 auto;
+    margin-top:50px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+
+.tool> .box> li{
+    width:100%; height:60px;
+    border:0px solid black;
+}
+
+
+
+.tool> .box> .box_text{
+    width:100%; height:70px;
+    border:0px solid black;
+    background: url(../img/login/logo.png)no-repeat center center;
+}
+
+
+
+.tool> .box> .box_id {
+    width:100%; height:40px;
+    border:0px solid black;
+    margin-top:10px;
+}
+.tool> .box> .box_id> .icon{
+    width:40px; height:38px;
+    outline:0px solid black;
+    font-size:23px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+} 
+.tool> .box> .box_id> input{
+    width:400px; height:40px;
+    border:none;
+    border-bottom:1px solid black;
+    background: none;
+    text-indent: 10px;
+    font-size:17px;
+}
+.tool> .box> .box_id> input:focus{
+    outline:none;
+}
+
+
+
+
+.tool> .box> .box_pw {
+    width:100%; height:40px;
+    border:0px solid black;
+    margin-top:10px;
+}
+.tool> .box> .box_pw> .icon{
+    width:40px; height:38px;
+    outline:0px solid black;
+    font-size:23px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+} 
+.tool> .box> .box_pw> input{
+    width:400px; height:40px;
+    border:none;
+    border-bottom:1px solid black;
+    background: none;
+    text-indent: 10px;
+    font-size:17px;
+}
+.tool> .box> .box_pw> input:focus{
+    outline:none;
+}
+
+
+
+.tool> .box> .box_save{
+    width:100%; height:80px;
+    border:0px solid black;
+}
+.tool> .box> .box_save> p {
+    width:120px; height:80px;
+    border:0px solid black;
+    line-height: 80px;
+    text-align: center;
+    margin:0 auto;
+}
+.tool> .box> .box_save> input{
+    width:20px;height:20px;
+    background: none;
+    float:left;
+    margin: 0 auto;
+}
+
+
+
+.tool> .box> .box_btn {
+    width:90%; height:50px;
+    margin: 0 auto;
+    border:0px solid black;
+    border-radius: 100px;
+    background: linear-gradient(65deg, #0097c1, #00dabd);
+    color:white;
+    text-align: center;
+    line-height: 50px;
+    transition:  all 0.5s;
+    cursor: pointer;
+}
+
+.tool> .box> .box_btn:hover{
+    text-indent: -20px;
+}
+.tool> .box> .box_btn> span{
+    opacity: 0;
+    margin-left:5px;
+}
+.tool> .box> .box_btn:hover span{
+    opacity: 1;
+}
+
+
+.tool> .box> .box_under{
+    width:100%; height:21px;
+    border:0px solid black;
+    margin-top:30px;
+}
+.tool> .box> .box_under> div{
+    float:left;
+    width:0px; height:21px;
+    border:0px solid red;
+    text-align: center;
+    line-height: 21px;
+    font-size:13px;
+    cursor: pointer;
+}
+.tool> .box> .box_under> div:nth-child(1){
+    margin-left:75px;
+    width:20%;
+}
+.tool> .box> .box_under> div:nth-child(2){
+    border-right:1px solid rgba(0, 0, 0, 0.3);
+    border-left:1px solid rgba(0, 0, 0, 0.3);
+    width:30%;
+}
+.tool> .box> .box_under> div:nth-child(3){
+    width:20%;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    
+
+    .header{
+        font-size:25px;
+    }
+    
+}
+
+
+@media screen and (max-width:767px) {
+ 
+    .at{
+        height:100vh;
+    }
+    .header{
+        width:100%;height:100px;
+        line-height: 100px;
+        font-size:20px;
+    }
+    
+    
+    .tool{
+        height:400px;
+    }
+
+    .tool> .box{
+        width:375px; height:360px;
+        margin-top:0px;
+    }
+    
+    
+    .tool> .box> .box_text{
+        background-size:50% 50%;
+    }
+    
+    
+    
+    .tool> .box> .box_id {
+        width:100%; height:40px;
+        margin-top:10px;
+    }
+    .tool> .box> .box_id> .icon{
+        width:10%;
+    } 
+    .tool> .box> .box_id> input{
+        width:90%; 
+        font-size:15px;
+    }
+    
+    
+    .tool> .box> .box_pw {
+        width:100%; height:40px;
+        margin-top:10px;
+    }
+    .tool> .box> .box_pw> .icon{
+        width:10%; 
+    } 
+    .tool> .box> .box_pw> input{
+        width:90%;
+        font-size:15px;
+    }
+    
+    
+    
+    .tool> .box> .box_save{
+        height:60px;
+    }
+    .tool> .box> .box_save> p {
+        height:60px;
+        line-height: 60px;
+    }
+
+    
+    .tool> .box> .box_btn {
+        width:80%;
+        margin: 0 auto;
+    }
+  
+    
+    .tool> .box> .box_under{
+        margin-top:10px;
+    }
+
+}

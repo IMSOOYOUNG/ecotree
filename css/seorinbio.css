@@ -1,0 +1,670 @@
+@import "reset.css";
+
+
+section{
+    position:relative;
+    top:0;left:0;
+    width:100%;
+    overflow: hidden;
+}
+article{
+    position:relative;
+    top:0; left:0;
+}
+
+
+/* 아티클 0번 박스 */
+.at0{
+    width:100%; height:100vh;
+    border:0px solid blue;
+}
+
+
+.at0_prev{
+    position:absolute;
+    top:50%; left:3%;
+    z-index: 1;
+    transform: translateY(-50%);
+    width:70px; height:50px;
+    border:0px solid white;
+    background: url(../img/seorinbio/owl-prev.png)no-repeat;
+    background-size:contain;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.at0_next{
+    position:absolute;
+    top:50%; right:3%;
+    z-index: 1;
+    transform: translateY(-50%);
+    width:70px; height:50px;
+    border:0px solid white;
+    background: url(../img/seorinbio/owl-next.png)no-repeat;
+    background-size:contain;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+
+.at0_box{
+    position:absolute;
+    top:0; left:0;
+    width:100%; height:100%;
+    display:none;
+}
+
+.at0_box> div{
+    position:absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    width:1000px; height:auto;
+    border:0px solid black;
+    
+}
+.at0_box> div> p{
+    width:100%; height:80px;
+    border:0px solid white;
+    line-height: 80px;
+    text-align: center;
+    color:white;
+    font-size:50px;
+    font-weight: bold;
+}
+.at0_box> div> span{
+    width:100%; height:50px;
+    border:0px solid white;
+    line-height: 50px;
+    text-align: center;
+    color:white;
+    font-size:30px;
+    font-weight: bold;
+    display:inline-block
+}
+
+
+.at0_box1{
+    background:url(../img/seorinbio/main1.jpg)no-repeat;
+    background-size: cover;
+    /* display: block; */
+}
+.at0_box2{
+    background:url(../img/seorinbio/main2.jpg)no-repeat;
+    background-size: cover;
+    /* display: block; */
+}
+.at0_box3{
+    background:url(../img/seorinbio/main3.jpg)no-repeat;
+    background-size: cover;
+    /* display: block; */
+}
+.at0_box4{
+    background:url(../img/seorinbio/main4.jpg)no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+
+
+
+/* 아티클 1번 박스 */
+.at1{
+    width:100%; height:800px;
+    border:0px solid blue;
+    overflow: hidden;
+}
+
+.at1> h2{
+    width:100%; height:100px;
+    border:0px solid black;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 50px;
+    font-size:35px;
+}
+
+.at1> ul{
+    position:absolute;
+    top:200px; left:50%;
+    margin-left:-800px;
+    width:700px; height:600px;
+    border:0px solid black;
+}
+
+.at1> ul> li{
+    position: absolute;
+    top:0;left:0;
+    z-index: -1;
+    width:100%; height:100%;
+    border-radius: 65% 35% 60% 40%;
+    background: url(../img/seorinbio/bg_sub01_01.jpg)no-repeat ;
+    background-size:cover;
+    animation: at1_pic 18s infinite;
+}
+@keyframes at1_pic{
+    0% {border-radius: 65% 35% 60% 40%;}
+    25% {border-radius: 35% 65% 40% 60%;}
+    50% { border-radius: 60% 40% 65% 35%;}
+    75% {border-radius: 40% 60% 35% 65%;}
+}
+
+.at1> .at1_circle{
+    width:70%; height:600px;
+    border:0px solid black;
+    /* margin: 0 auto; */
+    background: url(../img/seorinbio/bg_sub01_001.png)no-repeat;
+    background-size:cover;
+    animation: at1_circle 5s infinite;
+}
+@keyframes at1_circle{
+    0%{margin-top:0;}
+    50%{margin-top:20px;}
+    100%{margin-top:0;}
+}
+
+.at1> .at1_text{
+    position:absolute;
+    top:250px; left:48%;
+    width:600px; height:300px;
+    border:0px solid black;
+    overflow: hidden;
+}
+.at1> .at1_text> p{
+    position:absolute;
+    top:0;left:-100%;
+    width:100%; height:100px;
+    border:0px solid black;
+    line-height: 100px;
+    font-size:40px;
+    animation: at1_text 2s;
+    animation-fill-mode: forwards;
+}
+.at1> .at1_text> div{
+    position:absolute;
+    top:100px;left:-100%;
+    width:100%; height:200px;
+    border:0px solid black;
+    font-size:18px;
+    color:rgba(0, 0, 0, 0.6);
+    line-height: 2;
+    animation: at1_text 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+@keyframes at1_text{
+    0%{left:-100%;}
+    100%{left:0%;}
+}
+
+
+
+
+
+/* 아티클 2번 박스 */
+.at2{
+    width:100%; height:800px;
+    border:0px solid blue;
+}
+
+
+.at2_header{
+    width:100%; height:200px;
+    border:0px solid black;
+    text-align: center;
+    line-height: 200px;
+    font-size:35px;
+    font-weight: bold;
+}
+
+.at2_tool{
+    width:1000px; height:500px;
+    border:0px solid black;
+    margin: 0 auto;
+}
+.at2_tool> div{
+    position: relative;
+    float:left;
+    width:25%; height:100%;
+    border:0px solid black;
+}
+
+.at2_tool> div:hover div:nth-child(1){
+    display:none;
+}
+.at2_tool> div:hover div:nth-child(2){
+    opacity:1;
+}
+
+.at2_tool> div> div:nth-child(1){
+    position: absolute;
+    top:50%; left:0;
+    transform: translateY(-50%);
+    width:100%; height:50px;
+    border:0px solid white;
+    text-align: center;
+    line-height: 50px;
+    color:white;
+    font-size:25px;
+    font-weight: bold;
+}
+.at2_tool> div> div:nth-child(2) {
+    position:absolute;
+    top:0;left:0;
+    width:100%; height:100%; 
+    border:0px solid black;
+    background:rgba(27, 131, 198, 0.9);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.at2_tool> div> div:nth-child(2) h3{
+    height:80px;
+    border:0px solid black;
+    margin-top:50%;
+    text-align: center;
+    line-height: 80px;
+    font-size:25px;
+    color: white;
+}
+.at2_tool> div> div:nth-child(2) p{
+    height:25px;
+    border:0px solid black;
+    text-align: left;
+    text-indent: 10px;
+    color: white;
+    font-size:15px;
+    line-height: 25px;
+}
+
+
+
+.at2_tool> .at2_box1{
+    background:url(../img/seorinbio/company3-inner1.jpg)no-repeat center center;
+    background-size:cover;
+}
+.at2_tool> .at2_box2{
+    background:url(../img/seorinbio/company3-inner2.jpg)no-repeat center center;
+    background-size:cover;
+}
+.at2_tool> .at2_box3{
+    background:url(../img/seorinbio/company3-inner3.jpg)no-repeat center center;
+    background-size:cover;
+}
+.at2_tool> .at2_box4{
+    background:url(../img/seorinbio/company3-inner4.jpg)no-repeat center center;
+    background-size:cover;
+}
+
+
+
+/* 아티클 3번 박스 */
+.at3{
+    width:100%; height:2000px;
+    border:0px solid black;
+    overflow: hidden;
+}
+.at3> p{
+    position:absolute;
+    top:20%; left:50%;
+    transform: translate(-50%,-50%);
+    font-size:150px;
+    font-weight: bold;
+    opacity: 0.2;
+}
+.at3.fixed> p{
+    position:fixed;
+    top:50%; left:50%;
+}
+
+
+
+/* 아티클4번 박스 */
+.at4{
+    width:100%; height:1000px;
+    border:0px solid blue;
+    background: ivory;
+}
+
+.at4_header{
+    position:relative;
+    top:0; left:0;
+    width:100%; height:200px;
+    border:0px solid black;
+    line-height: 200px;
+    text-align: center;
+    font-size:30px;
+    font-weight:bold;
+}
+
+
+.at4_box{
+    position:relative;
+    top:0; left:0;
+    margin:0 auto;
+    width:1000px; height:650px;
+    border:0px solid black;
+}
+
+
+.at4_box> .at4_pic{
+    position:absolute;
+    top:50px; left:5%;
+    width:90%; height:600px;
+    border:0px solid black;
+    background:url(../img/seorinbio/bg_sub_good3.png) no-repeat center center;
+    background-size: contain;
+    opacity: 0;
+}
+.at4_box> .at4_pic.rotate{
+    animation: at4_rotate 2s;
+    animation-fill-mode: forwards; 
+}
+@keyframes at4_rotate {
+    0% {transform: rotate(0deg); opacity:0;}
+    100% {transform: rotate(720deg); opacity:1;}
+
+}
+
+
+.at4_box> .at4_text{
+    width:260px; height:50px;
+    border:0px solid black;
+    text-align: center;
+    line-height: 50px;
+    font-size:20px;
+    opacity: 0;
+}
+.at4_box> .at4_text1{
+    position:absolute;
+    top:0; left:50%;
+    transform: translateX(-50%);
+}
+.at4_box> .at4_text2{
+    position:absolute;
+    bottom:50px; left:0%;
+}
+.at4_box> .at4_text3{
+    position:absolute;
+    bottom:50px; right:0%;
+}
+
+
+
+
+
+
+/* 태블릿 사이즈 */
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+    /* 아티클 0번 박스 */
+
+    .at0_prev{
+        width:50px;
+    }
+    .at0_next{
+        width:50px;
+    }
+
+    .at0_box> div{
+        width:700px;
+    }
+    .at0_box> div> p{
+        height:50px;
+        line-height: 50px;
+        font-size:30px;
+    }
+    .at0_box> div> span{
+        font-size:25px;
+    }
+
+
+
+    /* 아티클 1번 박스 */
+    .at1{
+        height:500px;
+    }
+    
+    .at1> h2{
+        margin-top: 30px;
+        font-size:25px;
+    }
+    
+    .at1> ul{
+        top:120px; left:0%;
+        margin-left:0px;
+        width:400px; height:400px;
+    }   
+    
+    .at1> .at1_text{
+        top:180px; left:48%; 
+        width:390px; height:300px;
+    }
+    .at1> .at1_text> p{
+        width:100%; height:50px;
+        line-height: 50px;
+        font-size:25px;
+    }
+    .at1> .at1_text> div{
+        top:50px;left:-100%;
+        width:100%; height:100px;
+        font-size:13px;
+    }
+
+
+    /* 아티클 2번 박스 */
+    .at2{
+        height:600px;
+    }
+
+
+    .at2_header{
+        height:150px;
+        line-height: 150px;
+        font-size:25px;
+    }
+
+    .at2_tool{
+        width:700px; height:380px;
+    }
+
+    .at2_tool> div> div:nth-child(1){
+        font-size:20px;
+    }
+    .at2_tool> div> div:nth-child(2) h3{
+        height:80px;
+        line-height: 80px;
+        font-size:20px;
+    }
+    .at2_tool> div> div:nth-child(2) p{
+        height:25px;
+        text-indent:0px;
+        font-size:11px;
+        line-height: 25px;
+    }
+
+
+    /* 아티클 3번 박스 */
+    .at3{
+        height:2000px;
+    }
+    .at3> p{
+        font-size:80px;
+    }
+
+
+
+    /* 아티클4번 박스 */
+    .at4{
+        height:1000px;
+    }
+    .at4_header{
+        height:130px;
+        line-height: 130px;
+        font-size:25px;
+    }
+
+
+    .at4_box{
+        width:700px; height:650px;
+    }
+
+
+    .at4_box> .at4_pic{
+        width:90%; height:600px;
+    }
+
+    
+    .at4_box> .at4_text2{
+        bottom:0px;
+    }
+    .at4_box> .at4_text3{
+        bottom:0px;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+/* 모바일 사이즈 */
+@media screen and (max-width:767px) {
+
+    /* 아티클 0번 박스 */
+
+    .at0_prev{
+        width:30px;
+    }
+    .at0_next{
+        width:30px;
+    }
+
+    .at0_box> div{
+        width:400px;
+    }
+    .at0_box> div> p{
+        height:40px;
+        line-height:40px;
+        font-size:20px;
+    }
+    .at0_box> div> span{
+        height:30px;
+        font-size:16px;
+    }
+
+
+
+    /* 아티클 1번 박스 */
+    .at1{
+        height:400px;
+    }
+    
+    .at1> h2{
+        margin-top: 10px;
+        font-size:20px;
+    }
+    
+    .at1> ul{
+        top:120px; left:0%;
+        margin-left:0px;
+        width:400px; height:300px;
+    }
+    .at1> .at1_circle{
+        width:100%; height:200px;
+    }
+    
+    .at1> .at1_text{
+        top:80px; left:5%;
+        width:400px; height:400px;
+    }
+    .at1> .at1_text> p{
+        width:100%; height:50px;
+        line-height: 50px;
+        font-size:25px;
+    }
+    .at1> .at1_text> div{
+        top:70px;
+        font-size:13px;
+    }
+
+
+    /* 아티클 2번 박스 */
+    .at2{
+        height:1600px;
+    }
+
+
+    .at2_header{
+        height:100px;
+        line-height: 100px;
+        font-size:20px;
+    }
+
+    .at2_tool{
+        width:350px; height:1400px;
+    }
+    .at2_tool> div{
+        width:100%; height:25%;
+        float: none;
+    }
+
+    .at2_tool> div> div:nth-child(1){
+        font-size:30px;
+    }
+    .at2_tool> div> div:nth-child(2) h3{
+        margin-top:10%;
+        font-size:30px;
+    }
+    .at2_tool> div> div:nth-child(2) p{
+        font-size:16px;
+    }
+
+
+    /* 아티클 3번 박스 */
+    .at3{
+        height:2000px;
+    }
+    .at3> p{
+        font-size:40px;
+    }
+
+
+    /* 아티클4번 박스 */
+    .at4{
+        height:550px;
+    }
+
+    .at4_header{
+        height:100px;
+        line-height: 100px;
+        font-size:20px;
+    }
+
+
+    .at4_box{
+        width:350px; height:400px;
+    }
+
+
+    .at4_box> .at4_pic{
+        width:90%; height:300px;
+    }
+
+
+    .at4_box> .at4_text{
+        width:150px;
+        font-size:12px;
+    }
+    .at4_box> .at4_text2{
+        bottom:20px;
+    }
+    .at4_box> .at4_text3{
+        bottom:20px;
+    }
+
+
+}

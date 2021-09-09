@@ -1,0 +1,238 @@
+@import "reset.css";
+
+
+section{
+    position:relative;
+    top:0; left:0;
+}
+
+.at{
+    width:100%;
+    border:0px solid black;
+    padding: 100px 0;
+}
+
+.title{
+    width:100%; height:150px;
+    border:0px solid black;
+}
+.title> h2{
+    width:300px; height:100%;
+    border:0px solid black;
+    margin:0 auto;
+    line-height:150px;
+    text-align: center;
+    font-size:30px;
+}
+
+
+.box{
+    width:800px;
+    margin:0 auto;
+    margin-top:50px;
+}
+
+.box> h4{
+    width:100%; height:50px;
+    border-bottom:2px solid #ccc;
+    line-height: 50px;
+    font-size:20px;
+}
+
+.box> form{
+    width:100%;
+    padding: 0 30px;
+    padding-bottom: 50px;
+    border:0px solid blue;
+}
+.box> form> p {
+    width:100%; height:50px;
+    line-height: 50px;
+}
+
+.box> form> p> span{
+    display: inline-block;
+    font-size:13px;
+}
+.box> form> p> span:nth-child(1){
+    width:20%;
+    font-size:16px;
+}
+
+.box> form> p> input{ 
+    height: 35px; display: inline-block;
+}
+
+.box> form> p> select {
+    height:35px;
+}
+
+.box> form> p> input[type="checkbox"]{
+    width:15px; height:15px;
+}
+
+
+.box> form> ul{
+    margin: 50px auto 0 auto;
+    border: 1px solid #bbb;
+}
+
+.box> form> ul> li{
+    position: relative;
+    line-height: 80px;
+    padding-left: 30px; font-weight: bold;
+    font-size: 17px; 
+    border-bottom: 1px solid #bbb;
+}
+
+
+.box> form> ul> li> input[type="checkbox"]{
+    width: 17px; height: 17px;
+}
+.box> form> ul> li> span{
+    padding-left: 20px;
+}
+
+.box> form> ul> li> textarea{
+    position: relative; 
+    z-index: 10;
+    width: 93%;
+    font-size: 12px;
+}
+
+
+
+.box> .btn{
+    display: block; 
+    margin: 20px auto;
+    text-align: center; line-height: 50px;
+    width: 150px; height: 50px;
+    background: #39528a; color: #f9f9f9;
+}
+
+
+
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    
+
+    .at{
+        padding: 50px 0;
+    }
+    
+    .title{
+        width:100%; height:100px;
+    }
+    .title> h2{
+        line-height:100px;
+        font-size:25px;
+    }
+    .box{
+        width:765px;
+    }
+    
+    
+    
+    .box> form> ul> li> textarea{
+        height:100px;
+    }
+    
+    
+    
+
+}
+
+@media screen and (max-width:767px) {
+    
+    .at{
+        padding: 50px 0 ;
+    }
+    
+    .title{
+        height:100px;
+    }
+    .title> h2{
+        height:100%;
+        line-height:100px;
+        font-size:20px;
+    }
+    
+    
+    .box{
+        width:375px;
+    }
+    
+    .box> h4{
+        font-size:16px;
+    }
+    
+    .box> form{
+        padding: 0 0px;
+    }
+    .box> form> p {
+        width:100%; height:50px;
+        line-height: 50px;
+    }
+    
+    .box> form> p> span{
+        display:none;
+    }
+    .box> form> p> span:nth-child(1){
+        width:21%;
+        font-size:12px;
+        display:inline-block;
+    }
+    
+    .box> form> p> input{ 
+        width:30%;
+        height: 30px;
+    }
+    
+    .box> form> p> select {
+        height:30px;
+    }
+
+    .box> form> p> .phone{
+        width:10%;
+    }
+    
+    
+    
+    .box> form> ul{
+        margin: 30px auto 0 auto;
+    }
+    
+    .box> form> ul> li{
+        padding-left: 30px; font-weight: bold;
+        font-size: 15px; 
+    }
+    
+    
+    .box> form> ul> li> input[type="checkbox"]{
+        width: 15px; height: 15px;
+    }
+    .box> form> ul> li> span{
+        padding-left: 10px;
+    }
+    
+    .box> form> ul> li> textarea{
+        font-size: 11px;
+    }
+    
+    
+    
+    .box> .btn{
+        width: 100px; height: 50px;
+        font-size:13px;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
